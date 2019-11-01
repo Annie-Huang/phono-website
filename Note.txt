@@ -2,7 +2,7 @@ https://www.youtube.com/watch?v=61R5kn_kYwY
 https://github.com/Annie-Huang/phono-website
 https://codepen.io/bradtraversy/pen/MNEgoJ
 
-https://simplelightbox.com/
+https://simplelightbox.com/     << Need to follow the usage instruction underneath it.
 https://fonts.google.com/
 https://fonts.google.com/specimen/Catamaran
 https://fontawesome.com/kits/fca1384425/settings
