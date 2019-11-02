@@ -16,3 +16,6 @@ Standard way to make everything center in flex:
     // Do the following if you want to make text smaller.
     margin: auto;
     max-width: XXXpx;
+
+
+The light box effect is sooooo cool. click on the images in the gallery box...
