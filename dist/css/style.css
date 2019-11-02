@@ -1,7 +1,8 @@
+/* Standard Reset ---------------------------------------------------*/
 :root {
     --primary-color: #333;
     --secondary-color: #444;
-    --overlay-color: rgba(0,0,0,0.7);
+    --overlay-color: rgba(0,0,0,0.7); /*I think it can just put the opacity rather than rgba*/
 }
 
 * {
@@ -41,6 +42,8 @@ img {
     padding: 0 2rem;
 }
 
+/* Nav Bar---------------------------------------------------*/
+
 .navbar {
     font-size: 1.2rem;
     padding-top: 0.3rem;
@@ -77,7 +80,7 @@ img {
     color: #555;
 }
 
-/*---------------------------------------------------*/
+/* Section A ---------------------------------------------------*/
 
 .section-a {
     margin: 2rem 0;
@@ -100,6 +103,32 @@ img {
     margin: 1rem 0;
 }
 
+/* Section B ---------------------------------------------------*/
+.section-b {
+    position: relative;
+    /*cover means cover the whole div*/
+    background: url("../img/section-b.jpg") no-repeat bottom center/cover;
+    height: 600px;
+}
+
+/*Good idea to set the color in another class so the overlay class can be reused*/
+.section-b-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+}
+
+
+
+
+
 /* Utilities ---------------------------------------------------*/
 .btn {
     display: inline-block;
@@ -116,7 +145,14 @@ img {
     background: var(--secondary-color);
 }
 
-
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
 
 
 

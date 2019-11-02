@@ -6,3 +6,13 @@ https://simplelightbox.com/     << Need to follow the usage instruction undernea
 https://fonts.google.com/
 https://fonts.google.com/specimen/Catamaran
 https://fontawesome.com/kits/fca1384425/settings
+
+Standard way to make everything center in flex:
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // Do the following if you want to make text smaller.
+    margin: auto;
+    max-width: XXXpx;
