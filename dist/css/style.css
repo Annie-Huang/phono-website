@@ -36,15 +36,46 @@ img {
 
 .container {
     max-width: 1100px;
-    margin: auto; /* this will make the content into the middle */
+    margin: auto; /* this will make the content into the middle when the width is > 1100px */
     overflow: hidden;
     padding: 0 2rem;
 }
 
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
 
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.navbar .logo {
+    font-size: 2rem;
+}
 
+.navbar .nav {
+    /* https://css-tricks.com/snippets/css/complete-guide-grid/
+       You can do it with justify-items (apply to all items in that column) or justify-self (only apply one item)
+       This tutorial said flex-end, but flex-end is not a value according to official website. */
+    justify-self: end;
 
+    /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    display: flex;
+    /*The following two combined will put the content in the middle horizontally and vertically*/
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+    color: #555;
+}
 
 
 
