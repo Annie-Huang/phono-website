@@ -7,6 +7,7 @@ https://fonts.google.com/
 https://fonts.google.com/specimen/Catamaran
 https://fontawesome.com/kits/fca1384425/settings
 
+
 Standard way to make everything center in flex:
     display: flex;
     flex-direction: column;
@@ -19,3 +20,25 @@ Standard way to make everything center in flex:
 
 
 The light box effect is sooooo cool. click on the images in the gallery box...
+
+
+line-height
+(https://dev.to/lampewebdev/css-line-height-jjp)
+========================================================
+Default value and unitless value
+'normal' is the default value if you don't set it to something different. Usually, this means that it is set to 1.2,
+this depends on the browser vendor. So what does just a number value without any unit mean?
+It is actually a multiplier. It takes the font-size value and multiplies it by 1.2.
+Let's calculate the height of one line with the following example.
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+We just have to do the following calculation: 16 * 1.5 = 24px.
+So we now know that our text will have a minimum height of 24px.
+So it will add 4 pixels under the text and above it. Cool that easy 😎!
+
+percentage
+The % value is a little bit tricky to read. 100% means multiply by 1. Again an example to make it clear.
+% value is related to the font-size as well
